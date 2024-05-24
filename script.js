@@ -11,7 +11,7 @@ const isInputValid = () => nameInput.value && (ageInput.value || ageInput ===0);
 const handleSubmit = ()=>{
      return new Promise((resolve,reject)=>{
 		if(Number(ageInput.value) > 18) resolve(`Welcome, ${nameInput.value}. You can vote.`)
-		else reject(`Oh sorry ${nameInput.value}. You aren't old enough`);
+		else reject(`Oh sorry ${nameInput.value}. You aren't old enough.`);
 	})
 	
 	
